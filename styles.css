@@ -1,3 +1,12 @@
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.clock-container{
+    gap: 5px;
+}
+
 .container{
     height: 80vh;
     display: flex;
@@ -6,23 +15,77 @@
 }
 
 .timer-container{
+    background-color: #FFFFFA;
+    border: 2px solid #000;
+    border-radius: 30px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     width: 300px;
-    background-color: black;
+    
 }
 
 .clock-container{
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
 }
 
 .clock-container input{
+     
     all: unset;
+    font-size: 45px;
+
 }
 
 .btn-container{
-    background-color: aquamarine;  
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    gap: 10px;
+    
 }
+
+ .btn-container button{
+    cursor: pointer;
+    all: unset;
+    font-size: 30px;
+    border: 1px solid #000;
+    border-radius: 40px;
+    padding: 13px 15px;
+}
+
+.btn-container .func-btn{
+     cursor: pointer;
+    display: flex;
+    border: 1px solid #000;
+    border-radius: 40px;
+    padding: 13px 15px;
+}
+
+
+ img{
+    height: 40px;
+    width: 40px;
+}
+
+
+.st-btn-container{
+    padding: 12px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    gap: 10px;
+}
+
+.st-btn-container button{
+     all: unset;
+    border: 1px solid #000;
+    border-radius: 30px;
+    padding: 20px 20px;
+}
+
+
