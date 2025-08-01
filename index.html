@@ -14,51 +14,48 @@
     </header>
 
     <main class="container">
-     <div>
+     <section id="main-menu">
         <div class="timer-container">
                 <div class="clock-container">
-                    <h1 id="input">00:00</h1>
+                    <h1 contenteditable="true" id="input">00:00</h1>
                 </div>
+                <div class="main-menu-btn">
+                    <div class="btn-container">
+                        <button class="add-mins">10</button>
+                        <button class="add-mins">15</button>
+                        <button class="add-mins">30</button>  
+                    </div>  
                 <div class="btn-container">
-                    <button class="add-mins">10</button>
-                    <button class="add-mins">15</button>
-                    <button class="add-mins">30</button>  
-                </div>  
-            <div class="btn-container">
-                    <button class="func-btn start-btn"><img src="components/play.png" alt="start timer"></button>  
-
-            </div>
-
-         </div>
-                 
-        </div>
-
-        <div id="timer-menu">
-            <div class="timer-container">
-                <div class="clock-container">
-                    <h1 class="input">00:00</h1>
+                        <button class="func-btn start-btn"><img src="components/play.png" alt="start timer"></button>  
+    
                 </div>
+
+                </div>
+            
+
+             <section class="timer-menu-btn" >
+           
                 <div class="btn-container">
                     <button class="func-btn" id="reset-btn"><img src="components/pause.png" alt="pause timer"></button>
                     <button class="func-btn" id="pause-btn"><img src="components/stop-button.png" alt=""></button>
                       
                     </div>
-            </div>
-        </div>
+          
+        </section>
 
-        <section id="stop-menu" >
-        <div class="timer-container">
-                <div class="clock-container">
-                     <h1 class="input">00:00</h1>
-                </div>
+        <section class="stop-menu-btn" >
+       
             <div class="btn-container">
                     <button class="func-btn start-btn"><img src="components/play.png" alt="start timer"></button>  
 
             </div>
+                 
+    </section>
+
 
          </div>
                  
-    </section>
+        </section>
 
     </main>
 

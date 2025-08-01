@@ -2,10 +2,10 @@ const startbtn = document.querySelectorAll('.start-btn')
 const pausebtn = document.getElementById('reset-btn')
 const resetbtn = document.getElementById('pause-btn')
 const addMinutes = document.querySelectorAll('.add-mins')
-const indisplay= document.getElementById('input')
-const mainMenu= document.getElementById('main-menu')
-const timerMenu= document.getElementById('timer-menu')
-const stopMenu= document.getElementById('stop-menu')
+const indisplay= document.getElementById("input")
+const mainMenu= document.querySelector('.main-menu-btn')
+const timerMenu= document.querySelector('.timer-menu-btn')
+const stopMenu= document.querySelector('.stop-menu-btn')
 let initialTime= 0
 let remainingTime= 0
 let isRunning= false
@@ -17,10 +17,9 @@ let inputval;
 function formate(seconds){
     let minutes = (seconds / 60) | 0;
     let second = seconds % 60;
-
     let minstr = minutes < 10 ? "0" + minutes : "" + minutes;
     let secstr = second < 10 ? "0" + second : "" + second;
-    inputval = `${minstr}:${secstr}`;
+   inputval = `${minstr}:${secstr}`;
 }
 
 // to show the formatted time on display
@@ -57,6 +56,9 @@ let minutes
 startbtn.forEach(function (btn) {
     btn.addEventListener('click', () => {
         if (isRunning) return;
+        mainMenu.style.display='none'
+        stopMenu.style.display='none'
+        timerMenu.style.display='block'
         if (!remainingTime && minutes > 0) {
             initialTime = minutes * 60; // Convert minutes to seconds
             remainingTime = initialTime;
@@ -94,6 +96,9 @@ resetbtn.addEventListener('click', () => {
     remainingTime = 0;
     isRunning = false;
     clearInterval(countdownInterval);
+    mainMenu.style.display='block'
+    stopMenu.style.display='none'
+    timerMenu.style.display='none'
 })
 
 pausebtn.addEventListener('click', () => {
@@ -101,15 +106,16 @@ pausebtn.addEventListener('click', () => {
         clearInterval(countdownInterval);
         isRunning = false;
         console.log("Timer paused");
+        mainMenu.style.display='none'
+        stopMenu.style.display='block'
+        timerMenu.style.display='none'
     }
 })
 
 
-startbtn.addEventListener('click' , menu )
+
 
 function menu(){
-        mainMenu.style.display='none'
-        stopMenu.style.display='none'
-        timerMenu.style.display='block'
+       
 }
         
