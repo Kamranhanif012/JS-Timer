@@ -21,9 +21,9 @@ header{
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    width: 330px;
-    height: auto;
-    
+    width: 300px;
+    height: fit-content;
+     
 }
 
 .clock-container{
@@ -31,9 +31,19 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.ok-btn{
+    all: unset;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 20px 20px;
 }
 
 .clock-container h1{
+    all: unset  ;
     font-size: 45px;
     padding: 0 0;
 
@@ -71,14 +81,14 @@ header{
     cursor: pointer;
     display: flex;
     border: 1px solid #000;
-    border-radius: 40px;
-    padding: 13px 15px;
+    border-radius: 46px;
+    padding: 20px 22px;
     transition: 0.3s;
 }
 
 .func-btn:hover{
-    padding: 15px 17px ;
-    border-radius: 44px;
+    padding: 22px 24px ;
+    border-radius: 48px;
     font-size: 32px;
 }
 
