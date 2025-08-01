@@ -6,11 +6,47 @@ const indisplay= document.getElementById("input")
 const mainMenu= document.querySelector('.main-menu-btn')
 const timerMenu= document.querySelector('.timer-menu-btn')
 const stopMenu= document.querySelector('.stop-menu-btn')
+const timerContainer= document.querySelector('.timer-container')
 let initialTime= 0
 let remainingTime= 0
 let isRunning= false
 let countdownInterval= null
 let inputval;
+let invalue
+
+
+// Event listeners for start button and its functionality
+
+let minutes
+startbtn.forEach(function (btn) {
+    btn.addEventListener('click', () => {
+        if (isRunning) return;
+        if(stopMenu.style.display==='block'){
+            mainMenu.style.display='none'
+            stopMenu.style.display='none'
+            timerMenu.style.display='block'
+            
+
+        }
+             invalue= parseInt(indisplay.textContent)
+             minutes= invalue
+            if (!remainingTime && minutes > 0) {
+            mainMenu.style.display='none'
+            stopMenu.style.display='none'
+            timerMenu.style.display='block'
+            initialTime = minutes * 60; 
+            remainingTime = initialTime;
+            formate(remainingTime);
+            showOnDisplay();
+            
+        }
+            countDown();
+    });
+});
+
+
+
+
 
 // To convert seconds into minutes and seconds
 
@@ -27,6 +63,8 @@ function formate(seconds){
 function showOnDisplay(){
     indisplay.textContent= inputval
 }
+
+
 
 // To start the countdown timer
 
@@ -50,24 +88,7 @@ function countDown(){
 } , 1000)   
 }
 
-// Event listeners for start button and its functionality
 
-let minutes
-startbtn.forEach(function (btn) {
-    btn.addEventListener('click', () => {
-        if (isRunning) return;
-        mainMenu.style.display='none'
-        stopMenu.style.display='none'
-        timerMenu.style.display='block'
-        if (!remainingTime && minutes > 0) {
-            initialTime = minutes * 60; // Convert minutes to seconds
-            remainingTime = initialTime;
-            formate(remainingTime);
-            showOnDisplay();
-        }
-        countDown();
-    });
-});
 
 // Event listeners for adding minutes and its functionality
 
@@ -99,23 +120,16 @@ resetbtn.addEventListener('click', () => {
     mainMenu.style.display='block'
     stopMenu.style.display='none'
     timerMenu.style.display='none'
+
 })
 
 pausebtn.addEventListener('click', () => {
     if (isRunning) {
         clearInterval(countdownInterval);
         isRunning = false;
-        console.log("Timer paused");
         mainMenu.style.display='none'
         stopMenu.style.display='block'
         timerMenu.style.display='none'
     }
 })
-
-
-
-
-function menu(){
-       
-}
-        
+    
