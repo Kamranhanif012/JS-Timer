@@ -81,7 +81,7 @@ header{
     cursor: pointer;
     display: flex;
     border: 1px solid #000;
-    border-radius: 40px;
+    border-radius: 46px;
     padding: 20px 22px;
     transition: 0.3s;
 }
