@@ -4,7 +4,7 @@ header{
 }
 
 .clock-container{
-    gap: 5px;
+   
 }
 
 .container{
@@ -27,11 +27,12 @@ header{
 }
 
 .clock-container{
-    padding: 20px;
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+     gap: 5px;
 }
 
 .ok-btn{
@@ -44,8 +45,8 @@ header{
 
 .clock-container h1{
     margin: 0 0;
-    font-size: 60px;
-    padding: 10px 10px;
+    font-size: 45px;
+    
 
 }
 
