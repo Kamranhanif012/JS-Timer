@@ -34,6 +34,7 @@ startbtn.forEach(function (btn) {
             mainMenu.style.display='none'
             stopMenu.style.display='none'
             timerMenu.style.display='block'
+            contenteditable="true"
             initialTime = minutes * 60; 
             remainingTime = initialTime;
             formate(remainingTime);
