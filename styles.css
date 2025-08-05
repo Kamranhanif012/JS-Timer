@@ -27,7 +27,7 @@ header{
 }
 
 .clock-container{
-    padding: 30px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,9 +43,9 @@ header{
 }
 
 .clock-container h1{
-    all: unset  ;
-    font-size: 45px;
-    padding: 0 0;
+    margin: 0 0;
+    font-size: 60px;
+    padding: 10px 10px;
 
 }
 
