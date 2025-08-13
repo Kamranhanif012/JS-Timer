@@ -1,9 +1,15 @@
+body{
+    background-image: linear-gradient( to bottom right, rgb(0, 247, 255), rgb(0, 224, 19));
+}
+
 header{
     display: flex;
     justify-content: center;
+    color: #000000e5;
 }
 
 .container{
+    
     height: 80vh;
     display: flex;
     align-items: center;
@@ -11,7 +17,7 @@ header{
 }
 
 .timer-container{
-    background-color: #FFFFFA;
+    background-color: #f8e3bb;
     border: 2px solid #000;
     border-radius: 30px;
     overflow: hidden;
