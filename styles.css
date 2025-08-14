@@ -1,141 +1,138 @@
-body{
-    background-image: linear-gradient( to bottom right, rgb(0, 247, 255), rgb(0, 224, 19));
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(0, 247, 255),
+    rgb(0, 224, 19)
+  );
 }
 
-header{
-    display: flex;
-    justify-content: center;
-    color: #000000e5;
+header {
+  display: flex;
+  justify-content: center;
+  color: #000000e5;
 }
 
-header{
-    display: flex;
-    justify-content: center;
+header {
+  display: flex;
+  justify-content: center;
 }
 
-.clock-container{
-    gap: 5px;
+.clock-container {
+  gap: 5px;
 }
 
-.container{
-    
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.timer-container{
-    background-color: #f8e3bb;
-    border: 2px solid #000;
-    border-radius: 30px;
-    overflow: hidden;
-    background-color: #FFFFFA;
-    border: 2px solid #000;
-    border-radius: 30px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: fit-content;
-     
+.timer-container {
+  background-color: #f8e3bb;
+  border: 2px solid #000;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #fffffa;
+  border: 2px solid #000;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: fit-content;
 }
 
-.clock-container{
-    padding: 30px;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-     gap: 5px;
+.clock-container {
+  padding: 30px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
 }
 
-.ok-btn{
-    all: unset;
-    font-size: 20px;
-    border: 1px solid black;
-    border-radius: 30px;
-    padding: 20px 20px;
+.ok-btn {
+  all: unset;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 20px 20px;
 }
 
-.clock-container h1{
-    margin: 0 0;
-    font-size: 45px;
-    
-
+.clock-container h1 {
+  margin: 0 0;
+  font-size: 45px;
 }
 
-.btn-container{
-    padding: 12px;
-    display: flex;
-    width: auto;
-    height: 82px;
-    align-items: center;
-    justify-content: center;  
-    gap: 10px;
-    
+.btn-container {
+  padding: 12px;
+  display: flex;
+  width: auto;
+  height: 82px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
- .btn-container .add-mins{
-    all: unset;
-    font-size: 30px;
-    border: 1px solid #000;
-    border-radius: 40px;
-    padding: 13px 15px;
-    cursor: pointer;
-    transition: 0.3s;
+.btn-container .add-mins {
+  all: unset;
+  font-size: 30px;
+  border: 1px solid #000;
+  border-radius: 40px;
+  padding: 13px 15px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.add-mins:hover{
-    padding: 15px 17px ;
-    border-radius: 44px;
-    font-size: 32px;
+.add-mins:hover {
+  padding: 15px 17px;
+  border-radius: 44px;
+  font-size: 32px;
 }
 
-.btn-container .func-btn{
-    all: unset;
-    cursor: pointer;
-    display: flex;
-    border: 1px solid #000;
-    border-radius: 46px;
-    padding: 20px 22px;
-    transition: 0.3s;
+.btn-container .func-btn {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  border: 1px solid #000;
+  border-radius: 46px;
+  padding: 20px 22px;
+  transition: 0.3s;
 }
 
-.func-btn:hover{
-    padding: 22px 24px ;
-    border-radius: 48px;
-    font-size: 32px;
+.func-btn:hover {
+  padding: 22px 24px;
+  border-radius: 48px;
+  font-size: 32px;
 }
 
-
- img{
-    height: 40px;
-    width: 40px;
+img {
+  height: 40px;
+  width: 40px;
 }
 
-
-.st-btn-container{
-    padding: 12px;
-    background-color: aquamarine;
-    display: flex;
-    align-items: center;
-    justify-content: center;  
-    gap: 10px;
+.st-btn-container {
+  padding: 12px;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-.st-btn-container button{
-     all: unset;
-    border: 1px solid #000;
-    border-radius: 30px;
-    padding: 20px 20px;
+.st-btn-container button {
+  all: unset;
+  border: 1px solid #000;
+  border-radius: 30px;
+  padding: 20px 20px;
 }
 
-.timer-menu-btn{
-    display: none;
+.timer-menu-btn {
+  display: none;
 }
 
 .stop-menu-btn {
-    display: none;
+  display: none;
 }
