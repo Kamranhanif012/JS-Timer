@@ -7,6 +7,15 @@ header{
     gap: 5px;
 }
 
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.clock-container{
+    gap: 5px;
+}
+
 .container{
     height: 80vh;
     display: flex;
@@ -19,50 +28,81 @@ header{
     border: 2px solid #000;
     border-radius: 30px;
     overflow: hidden;
+    background-color: #FFFFFA;
+    border: 2px solid #000;
+    border-radius: 30px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     width: 300px;
-    
+    height: fit-content;
+     
 }
 
 .clock-container{
-    padding: 30px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-.clock-container input{
-     
+.ok-btn{
     all: unset;
-    font-size: 45px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 20px 20px;
+}
+
+.clock-container h1{
+    margin: 0 0;
+    font-size: 60px;
+    padding: 10px 10px;
 
 }
 
 .btn-container{
     padding: 12px;
     display: flex;
+    width: auto;
+    height: 82px;
     align-items: center;
     justify-content: center;  
     gap: 10px;
     
 }
 
- .btn-container button{
-    cursor: pointer;
+ .btn-container .add-mins{
     all: unset;
     font-size: 30px;
     border: 1px solid #000;
     border-radius: 40px;
     padding: 13px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-mins:hover{
+    padding: 15px 17px ;
+    border-radius: 44px;
+    font-size: 32px;
 }
 
 .btn-container .func-btn{
-     cursor: pointer;
+    all: unset;
+    cursor: pointer;
     display: flex;
     border: 1px solid #000;
-    border-radius: 40px;
-    padding: 13px 15px;
+    border-radius: 46px;
+    padding: 20px 22px;
+    transition: 0.3s;
+}
+
+.func-btn:hover{
+    padding: 22px 24px ;
+    border-radius: 48px;
+    font-size: 32px;
 }
 
 
@@ -88,4 +128,10 @@ header{
     padding: 20px 20px;
 }
 
+.timer-menu-btn{
+    display: none;
+}
 
+.stop-menu-btn {
+    display: none;
+}
